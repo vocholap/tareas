@@ -1,0 +1,46 @@
+inicio
+ real presion, volumen, temperatura, masa
+ leer presion, volumen, temperatura
+ masa= (presion*volumen)/(0.36*(temperatura+460))
+ escribir masa
+fin
+
+inicio 
+ entero edad, num_pulsaciones 
+ leer edad 
+ num_pulsaciones= (220-edad)/10
+ escribir num_pulsaciones
+fin
+
+inicio
+ real incremento, sueldo_nuevo, sueldo
+ leer sueldo 
+ incremento= sueldo* 0.25
+ sueldo_nuevo= sueldo + incremento
+ escribir sueldo_nuevo
+fin
+
+inicio
+ real precio, aumento, precio_venta
+ leer precio 
+ aumento= 0.30
+ precio_venta= precio + (precio* 0.30)
+ escribir precio_venta
+fin
+
+inicio 
+ real tiempo_lunes, tiempo_miercoles, tiempo_viernes, promedio
+ leer  tiempo_lunes, tiempo_miercoles, tiempo_viernes
+ promedio= (tiempo_lunes + tiempo_miercoles + tiempo_viernes)/3
+ escribir  "el promedio del tiemnpo es ", promedio 
+fin
+
+inicio
+ real porcentaje_empresa_p1,porcentaje_empresa_p2, porcentaje_empresa_p3 total_empresa, inversion_p1, inversion_p2, inversion_p3
+ leer inversion_p1, inversion_p2, inversion_p3
+ total_empresa= inversion_p1 + inversion_p2 + inversion_p3
+ porcentaje_empresa_p1= (100* inversion_p1)/total_empresa
+ porcentaje_empresa_p2= (100*inversion_p2)/total_empresa
+ porcentaje_empresa_p3= (100*inversion_p3)/total_empresa
+ escribir porcentaje_empresa_p1,"%", porcentaje_empresa_p2, "%", porcentaje_empresa_p3,"%"
+fin 

@@ -1,0 +1,80 @@
+inicio
+ real calorias_consumidas, tiempo_actividad, calorias_minuto
+ texto actividad 
+ leer tiempo_actividad, actividad
+ si actividad es "dormir" entonces
+ calorias_minuto= 1.08
+ fin si
+ si  actividad es "sentado" entonces
+ calorias_minuto= 1.66
+ fin si
+ calorias_consumidas= calorias_minuto* tiempo_actividad
+ escribir calorias_consumidas 
+fin 
+
+inicio
+  real precio, precio_final descuento
+  entero clave
+  texto nombre_articulo
+  leer clave  precio  nombre_articulo
+  string= precio_final
+  si clave= 01 entonces
+  precio_final=precio-(precio*0.10)
+  fin si 
+  si clave= 02 entonces
+  precio_final=precio-(precio*0.20)
+  si clave=>03 entonces
+  precio_final=(precio)
+  fin si 
+  escribir precio, precio_final, nombre_articulo, clave
+fin 
+
+inicio
+ real total_pagar valor_camisetas descuento
+ entero camisetas
+ leer camisetas valor_camisetas
+ si camisetas>=3 entonces 
+ descuento= 0.20
+ si no 
+ descuento= 0.10
+ total_pagar= camisetas* (valor_camisetas-(valor_camisetas*descuento))
+ escribir total_pagar
+fin
+
+inicio
+ real compra, descuento, dinero_descuentado
+ entero numero 
+ leer compra, numero
+ si numero< 74 entonces
+ descuento= 0.15
+ si no 
+ descuento= 0.20
+ fin si
+  dinero_descuentado= compra* descuento
+  escribir dinero_descuentado 
+fin
+
+inicio 
+ real couta, monto_incial
+ leer monto_incial
+ si monto_incial> 50.000 entonces
+ couta= 0.02* monto_incial
+ si no 
+ couta= 0.03*monto_incial
+ fin si 
+ escribir couta
+fin 
+
+inicio
+ real pago_horas, horas, pago_extra, horas_extras
+ leer pago_horas, horas
+ si horas>40 entonces
+ horas_extras= horas-40
+ fin si
+ si horas_extras<=8 entonces
+ pago_extra= horas_extras* (8 *(2 *pago_horas))
+ si no 
+ pago_extra= horas_extras* (8 *(2 *pago_horas)) + (horas_extras-8)*(3* pago_horas)
+ fin si
+ escribir pago_extra
+fin 
