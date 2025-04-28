@@ -1,0 +1,5 @@
+inicio
+ entero numero, conteo 
+ conteo = 1
+ mientras conteo<=10 
+fin
